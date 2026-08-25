@@ -4,9 +4,11 @@ int main(){
 	int n;
 	cout<< " enter the number are = ";
 	cin>> n;
+	int fact = 1;
 	int i;
 	for(i = 1; i <= n; i++){
-		cout<< i << endl;
+		fact = fact * i;
 	}
+	cout<< " factoerial of a number are = " << fact << endl;
 	return 0;
 }
