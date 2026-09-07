@@ -66,6 +66,11 @@ public:
             while(temp->next->next!=NULL){
                 temp = temp->next;
             }
+//            Node* temp = tail;
+//            tail = tail->prev;
+//            tail->next = NULL;
+//            temp->prev = NULL;
+//            delete temp;
             temp->next = NULL;
             tail->prev = NULL;
             delete tail;
