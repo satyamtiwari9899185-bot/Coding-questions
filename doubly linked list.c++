@@ -62,11 +62,14 @@ public:
         if(head == NULL){
             cout<< " DLL is empty " << endl;
         }else{
-            Node* temp = tail;
-            tail = tail->prev;
-            tail->next = NULL;
-            temp->prev = NULL;
-            delete temp;
+            Node* temp = head;
+            while(temp->next->next!=NULL){
+                temp = temp->next;
+            }
+            temp->next = NULL;
+            tail->prev = NULL;
+            delete tail;
+            tail = temp;
         }
     }
 };
