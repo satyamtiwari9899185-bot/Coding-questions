@@ -21,6 +21,8 @@ public:
 		if(head == NULL){
 			head = tail = newNode;
 		}else{
+			// tail->next = newNode;
+			// tail = newNode;
 			Node* temp = head;
 			while(temp->next!=NULL){
 				temp = temp->next;
