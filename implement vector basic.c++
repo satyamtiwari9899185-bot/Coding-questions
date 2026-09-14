@@ -6,6 +6,7 @@ int main(){
 	vec1.push_back(1);
 	vec1.push_back(2);
 	vec1.push_back(3);
+	// cout << " the vector one are = ";
 	for(int x : vec1){
 		cout<< x << endl;
 	}
